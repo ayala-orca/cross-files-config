@@ -1,9 +1,9 @@
-resource "aws_instance" "shouldfail" {
+resource "aws_instance" "should_fail" {
   ami = "ami-003634241a8fcdec0"
 
   instance_type = "t2.micro"
 
-  subnet_id   = aws_subnet.my_subnet.id
+  subnet_id   = aws_subnet.shouldfail.id
 
 }
 
