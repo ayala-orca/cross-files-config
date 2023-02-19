@@ -1,4 +1,4 @@
-resource "aws_instance" "positive1" {
+resource "aws_instance" "shouldfail" {
   ami = "ami-003634241a8fcdec0"
 
   instance_type = "t2.micro"
@@ -7,7 +7,7 @@ resource "aws_instance" "positive1" {
 
 }
 
-resource "aws_subnet" "my_subnet" {
+resource "aws_subnet" "shouldfail" {
   vpc_id     = aws_vpc.default.id
   cidr_block = "10.0.1.0/24"
 
