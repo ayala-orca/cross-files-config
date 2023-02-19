@@ -3,7 +3,7 @@ resource "aws_instance" "shouldpass" {
 
   instance_type = "t2.micro"
 
-  subnet_id   = aws_subnet.my_subnet1.id
+  subnet_id   = aws_subnet.shouldpass.id
 
 }
 
